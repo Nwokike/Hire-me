@@ -1,139 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services & Pricing | Onyeka Nwokike</title>
-    <meta name="description" content="Detailed pricing for web development, AI solutions, and technical writing services by Onyeka Nwokike. Rates in Naira (₦) and USD ($).">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/FB_IMG.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services & Pricing | Onyeka Nwokike</title>
+  <meta name="description" content="See my web development services and transparent USD pricing. Let's build your project together.">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="images/FB_IMG.jpg"/>
 </head>
 <body>
-    <header>
-        <div class="container header-row">
-            <div class="logo">Onyeka Nwokike</div>
-            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-            <nav class="main-nav" id="mainNav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services & Pricing</a></li>
-                    <li><a href="about.html">About / Process</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <nav class="navbar">
+    <div class="container nav-row">
+      <div class="logo">Onyeka</div>
+      <div class="nav-actions">
+        <button id="themeToggle" title="Toggle dark mode">
+          <span id="themeIcon" aria-hidden="true">🌙</span>
+        </button>
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">&#9776;</button>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="https://nwokike.github.io/portfolio/" target="_blank" class="nav-link">Portfolio</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" id="closeMenu" aria-label="Close menu">&times;</button>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="https://nwokike.github.io/portfolio/" target="_blank" class="nav-link">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Services & Simple Pricing</h1>
+          <p class="desc">
+            I offer straightforward pricing for common projects. All prices are starting points and can be adjusted based on your specific needs and budget.
+          </p>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Services & Transparent Pricing</h1>
-                <p>All prices are estimates. Final cost depends on project scope and complexity. Contact me for a detailed quote.</p>
-                <p class="exchange-note">* USD prices are approximate, based on an exchange rate of ~₦1,500/$1.</p>
+    <section class="section">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Custom Web Application</h3>
+            <p>From concept to launch, I’ll build a web app tailored to your needs.</p>
+            <div class="price">
+              <strong>Starting at $500</strong>
             </div>
-        </section>
-
-        <section class="pricing-section">
-            <div class="container">
-                <div class="pricing-card" id="basic-website">
-                    <h2>Basic Website</h2>
-                    <p>For individuals, startups, or small businesses needing a professional online presence.</p>
-                    <ul class="features">
-                        <li>Responsive design (mobile & desktop)</li>
-                        <li>3-5 pages (Home, About, Services, Contact)</li>
-                        <li>Basic contact form</li>
-                        <li>1 round of revisions</li>
-                        <li>Deployment assistance</li>
-                    </ul>
-                    <div class="price">
-                        <span class="price-naira">₦150,000</span>
-                        <span class="price-usd">~ $100</span>
-                    </div>
-                    <a href="contact.html" class="btn primary">Hire Me</a>
-                </div>
-
-                <div class="pricing-card" id="ecommerce-site">
-                    <h2>E-commerce Website</h2>
-                    <p>For businesses ready to sell products or services online.</p>
-                    <ul class="features">
-                        <li>Everything in Basic Website</li>
-                        <li>Product catalog management</li>
-                        <li>Secure checkout integration (e.g., Paystack, Flutterwave)</li>
-                        <li>Shopping cart functionality</li>
-                        <li>Admin dashboard for order management</li>
-                    </ul>
-                    <div class="price">
-                        <span class="price-naira">₦500,000</span>
-                        <span class="price-usd">~ $330</span>
-                    </div>
-                    <a href="contact.html" class="btn primary">Hire Me</a>
-                </div>
-
-                <div class="pricing-card" id="ai-app">
-                    <h2>AI-Powered Web Application</h2>
-                    <p>For innovative projects requiring machine learning, data analysis, or intelligent automation.</p>
-                    <ul class="features">
-                        <li>Custom application development</li>
-                        <li>Integration with AI APIs or models</li>
-                        <li>User authentication & data management</li>
-                        <li>Interactive dashboards or interfaces</li>
-                        <li>Project consultation & planning</li>
-                    </ul>
-                    <div class="price">
-                        <span class="price-naira">₦800,000+</span>
-                        <span class="price-usd">~ $530+</span>
-                    </div>
-                    <a href="contact.html" class="btn primary">Get a Quote</a>
-                </div>
-
-                <div class="pricing-card" id="technical-writing">
-                    <h2>Technical Writing</h2>
-                    <p>For clear, accurate, and engaging documentation, tutorials, or research-based content.</p>
-                    <ul class="features">
-                        <li>Project documentation</li>
-                        <li>Tutorial or guide creation</li>
-                        <li>Blog posts on technical topics</li>
-                        <li>Research summaries</li>
-                        <li>Content editing and proofreading</li>
-                    </ul>
-                    <div class="price">
-                        <span class="price-naira">₦20,000 - ₦50,000 per piece</span>
-                        <span class="price-usd">~ $13 - $33 per piece</span>
-                    </div>
-                    <a href="contact.html" class="btn primary">Discuss Project</a>
-                </div>
-
-                <div class="pricing-card" id="wordpress-site">
-                    <h2>WordPress Website</h2>
-                    <p>For content-heavy sites, blogs, or businesses needing a robust CMS.</p>
-                    <ul class="features">
-                        <li>Custom WordPress theme or premium theme setup</li>
-                        <li>Plugin configuration and optimization</li>
-                        <li>SEO best practices implementation</li>
-                        <li>Content migration (if applicable)</li>
-                        <li>Basic training on site management</li>
-                    </ul>
-                    <div class="price">
-                        <span class="price-naira">₦250,000</span>
-                        <span class="price-usd">~ $165</span>
-                    </div>
-                    <a href="contact.html" class="btn primary">Hire Me</a>
-                </div>
+            <div class="project-links">
+              <a href="contact.html">Interested? Contact Me</a>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; <span id="currentYear">2025</span> Onyeka Nwokike. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub">GitHub</a>
-                <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-                <a href="mailto:nwokikeonyeka@gmail.com" aria-label="Email">Email</a>
+          </div>
+          <div class="service-card">
+            <h3>Website Development</h3>
+            <p>A clean, modern, and responsive website to establish your online presence.</p>
+            <div class="price">
+              <strong>Starting at $300</strong>
             </div>
+            <div class="project-links">
+              <a href="contact.html">Interested? Contact Me</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <h3>Technical Writing</h3>
+            <p>Clear, user-friendly guides, tutorials, or documentation for your product or team.</p>
+            <div class="price">
+              <strong>Starting at $100 per piece</strong>
+            </div>
+            <div class="project-links">
+              <a href="contact.html">Interested? Contact Me</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <h3>AI Feature Integration</h3>
+            <p>Add smart features (like chatbots or data analysis) to your existing project using AI.</p>
+            <div class="price">
+              <strong>Starting at $400</strong>
+            </div>
+            <div class="project-links">
+              <a href="contact.html">Interested? Contact Me</a>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="js/script.js"></script>
+  <footer>
+    <div class="container">
+      <span>&copy; <span id="year">2025</span> Onyeka Nwokike</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

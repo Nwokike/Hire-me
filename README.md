@@ -1,5 +1,3 @@
-# Hire Onyeka Nwokike
-
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]

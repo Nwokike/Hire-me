@@ -1,90 +1,150 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# Hire Onyeka Nwokike
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+<!-- PROJECT LOGO -->
+<div align="center">
+  <h3 align="center">Hire Onyeka Nwokike</h3>
 
----
+  <p align="center">
+    A professional services website showcasing my skills, transparent pricing, and contact information for potential clients.
+    <br />
+    <a href="https://nwokike.github.io/hire-me/"><strong>View Live Site »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Nwokike/hire-me/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Nwokike/hire-me/issues">Request Feature</a>
+  </p>
+</div>
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#assignment-requirements">Assignment Requirements</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Before you write any code, take time to plan:
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+This website is a professional platform for potential clients to explore my services, review transparent pricing in Naira (₦) and US Dollars ($), and contact me to start a project. It was developed as the final project for the **Power Learn Project (PLP) Web Technologies Track**, demonstrating skills in web development and design.
 
-**Goal:** Show intentional structure and user journey across the site.
+**Key Features:**
+- **Simple & Clean:** Intuitive navigation with a focus on clear information.
+- **Responsive:** Optimized for mobile, tablet, and desktop devices.
+- **Interactive:** Includes a mobile menu, smooth scrolling, and a functional contact form.
+- **Professional:** Designed to attract freelance opportunities.
 
----
+**Live Site:** [https://nwokike.github.io/hire-me/](https://nwokike.github.io/hire-me/)
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+### Built With
 
-Using your plan, begin building:
+- [![HTML5][html5-shield]][html5-url]
+- [![CSS3][css3-shield]][css3-url]
+- [![JavaScript][javascript-shield]][javascript-url]
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+<!-- ASSIGNMENT REQUIREMENTS -->
+## Assignment Requirements
 
-Each page should:
+This project fulfills all requirements for the PLP Web Technologies Final Assignment:
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+- **🌐 Part 1: Planning & Organization:** A multipage site (Home, Services, About, Contact) with intuitive navigation.
+- **💻 Part 2: HTML5, CSS, JS:** Built with semantic HTML, responsive CSS, and interactive JavaScript (mobile menu, form, smooth scrolling).
+- **🛠️ Part 3: Best Practices:** Organized code structure with `/css`, `/js`, and `/images` folders, including clean, commented code.
+- **🚀 Part 4: Deployment:** Successfully deployed on GitHub Pages.
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+<!-- GETTING STARTED -->
+## Getting Started
 
----
+To run this project locally, follow these steps:
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+### Prerequisites
 
-Before deployment, refactor your project to follow production-friendly practices:
+- A modern web browser (e.g., Chrome, Firefox, Safari).
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+### Installation
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Nwokike/hire-me.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd hire-me
+   ```
+3. Open `index.html` in your web browser:
+   ```bash
+   open index.html  # On macOS
+   start index.html  # On Windows
+   xdg-open index.html  # On Linux
+   ```
 
----
+### Project Structure
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+```
+hire-me/
+├── css/
+│   └── styles.css       # Main stylesheet
+├── js/
+│   └── scripts.js       # JavaScript for interactivity
+├── images/
+│   └── logo.jpg         # Logo and other images
+├── index.html           # Homepage
+├── services.html        # Services page
+├── about.html           # About page
+├── contact.html         # Contact page
+└── README.md            # This file
+```
 
-Once your project is complete, choose a method to **host your site online**.
+<!-- CONTRIBUTING -->
+## Contributing
 
-You can use:
+Contributions are welcome and greatly appreciated! To contribute:
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+1. Fork the Project.
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the Branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
-Deploy your project and confirm that:
+Please open an issue with the tag "enhancement" for suggestions.
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+<!-- CONTACT -->
+## Contact
 
-**Goal:** Publish your work online and make it accessible to the world.
+Onyeka Nwokike - [nwokikeonyeka@gmail.com](mailto:nwokikeonyeka@gmail.com)
 
----
+Project Link: [https://github.com/Nwokike/hire-me](https://github.com/Nwokike/hire-me)
 
-## Deliverables
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/Nwokike/hire-me.svg?style=for-the-badge
+[contributors-url]: https://github.com/Nwokike/hire-me/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Nwokike/hire-me.svg?style=for-the-badge
+[forks-url]: https://github.com/Nwokike/hire-me/network/members
+[stars-shield]: https://img.shields.io/github/stars/Nwokike/hire-me.svg?style=for-the-badge
+[stars-url]: https://github.com/Nwokike/hire-me/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Nwokike/hire-me.svg?style=for-the-badge
+[issues-url]: https://github.com/Nwokike/hire-me/issues
+[html5-shield]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[html5-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[css3-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[css3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[javascript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+</xaiArtifact>

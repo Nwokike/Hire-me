@@ -6,7 +6,11 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h3 align="center">Hire Onyeka Nwokike</h3>
+  <a href="https://nwokike.github.io/hire-me/">
+    <img src="images/FB_IMG.jpg" alt="Logo" width="120" style="border-radius: 50%;">
+  </a>
+
+<h3 align="center">Hire Onyeka Nwokike</h3>
 
   <p align="center">
     A professional services website showcasing my skills, transparent pricing, and contact information for potential clients.
@@ -40,7 +44,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This website is a professional platform for potential clients to explore my services, review transparent pricing in Naira (₦) and US Dollars ($), and contact me to start a project. It was developed as the final project for the **Power Learn Project (PLP) Web Technologies Track**, demonstrating skills in web development and design.
+This website is a professional platform for potential clients to explore my services, review transparent pricing, and contact me to start a project. It was developed as the final project for the **Power Learn Project (PLP) Web Technologies Track**, demonstrating skills in web development and design.
 
 **Key Features:**
 - **Simple & Clean:** Intuitive navigation with a focus on clear information.
@@ -101,7 +105,7 @@ hire-me/
 ├── js/
 │   └── scripts.js       # JavaScript for interactivity
 ├── images/
-│   └── logo.jpg         # Logo and other images
+│   └── FB_IMG.jpg       # Logo and other images
 ├── index.html           # Homepage
 ├── services.html        # Services page
 ├── about.html           # About page

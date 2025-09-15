@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Onyeka Nwokike</title>
+    <meta name="description" content="Get in touch with Onyeka Nwokike for your next web development or technical writing project.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/FB_IMG.jpg">
+</head>
+<body>
+    <header>
+        <div class="container header-row">
+            <div class="logo">Onyeka Nwokike</div>
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="about.html">About / Process</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Let's Work Together</h1>
+                <p>Ready to start your project? Send me a message using the form below, or reach out directly via email or LinkedIn.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-grid">
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Project Type</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="basic-website">Basic Website</option>
+                                <option value="ecommerce-site">E-commerce Website</option>
+                                <option value="ai-app">AI-Powered Web App</option>
+                                <option value="technical-writing">Technical Writing</option>
+                                <option value="wordpress-site">WordPress Website</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Direct Contact</h3>
+                    <p>Prefer to reach out directly? Here are the best ways to contact me:</p>
+                    <ul class="contact-list">
+                        <li>
+                            <strong>Email:</strong>
+                            <a href="mailto:nwokikeonyeka@gmail.com">nwokikeonyeka@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank">linkedin.com/in/onyeka-nwokike</a>
+                        </li>
+                    </ul>
+                    <div class="note">
+                        <p><strong>Note:</strong> If you're using the form, I typically respond within 1-2 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear">2025</span> Onyeka Nwokike. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Nwokike" target="_blank" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/onyeka-nwokike" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:nwokikeonyeka@gmail.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

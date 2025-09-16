@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         yearSpan.textContent = new Date().getFullYear();
     }
     
-    // --- NEW: FAQ Accordion ---
+    // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -61,13 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const answer = item.querySelector('.faq-answer');
             const isActive = question.classList.contains('active');
 
-            // Close all other questions
             faqItems.forEach(otherItem => {
                 otherItem.querySelector('.faq-question').classList.remove('active');
                 otherItem.querySelector('.faq-answer').style.maxHeight = null;
             });
 
-            // Open the clicked question if it wasn't already open
             if (!isActive) {
                 question.classList.add('active');
                 answer.style.maxHeight = answer.scrollHeight + 'px';

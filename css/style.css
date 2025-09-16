@@ -17,6 +17,11 @@
   --transition: .17s cubic-bezier(.4,0,.2,1);
 }
 
+/* --- FIX: Global Box Sizing --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -65,7 +70,7 @@ body.dark .mobile-menu { background: var(--card-dark); border-left: 1.5px solid 
 .hero { background: var(--card); color: var(--text); border-radius: var(--radius); box-shadow: var(--shadow); margin: 2.1rem 0 0 0; padding: 2.4rem 0 2.7rem 0; border: 1.5px solid var(--border); transition: background .3s, border .3s; }
 body.dark .hero { background: var(--card-dark); color: var(--text-dark); border: 1.5px solid var(--border-dark); }
 .hero-grid { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2.7rem; }
-.hero-text h1 { font-size: 2.15rem; font-weight: 800; margin-bottom: .32rem; letter-spacing: -1.5px; }
+.hero-text h1 { font-size: 2.15rem; font-weight: 800; margin-bottom: .32rem; letter-spacing: -1.5px; line-height: 1.2; }
 .hero .subtitle { font-size: 1.09rem; margin-bottom: .5rem; color: var(--accent); font-weight: 600; }
 .hero .desc { margin-bottom: 1.28rem; font-size: 1.08rem; color: var(--subtext); line-height: 1.6; }
 body.dark .hero .desc { color: var(--subtext-dark); }
@@ -86,19 +91,23 @@ body.dark .hero .desc { color: var(--subtext-dark); }
 
 /* --- NEW STYLES --- */
 
-/* Approach Grid (Home Page) */
-.approach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-.approach-card { background: var(--card); border-radius: var(--radius); padding: 1.5rem; border: 1.5px solid var(--border); transition: var(--transition); }
-body.dark .approach-card { background: var(--card-dark); border-color: var(--border-dark); }
-.approach-card:hover { transform: translateY(-5px); border-color: var(--accent); }
-.approach-card h3 { margin: 0 0 0.5rem 0; color: var(--accent-dark); }
-.approach-card p { color: var(--subtext); line-height: 1.6; margin: 0; }
-body.dark .approach-card p { color: var(--subtext-dark); }
+/* Why Work With Me Grid (Home Page) */
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.why-card { background: var(--card); border-radius: var(--radius); padding: 1.5rem; border: 1.5px solid var(--border); transition: var(--transition); text-align: center; }
+body.dark .why-card { background: var(--card-dark); border-color: var(--border-dark); }
+.why-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.why-card h3 { margin: 0 0 0.5rem 0; color: var(--accent-dark); }
+.why-card p { color: var(--subtext); line-height: 1.6; margin: 0; font-size: 0.95rem; }
+body.dark .why-card p { color: var(--subtext-dark); }
 
-/* Toolkit Grid (Home Page) */
-.toolkit-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
-.toolkit-grid span { background: var(--card); color: var(--accent-dark); font-weight: 500; padding: 0.5rem 1rem; border-radius: 8px; border: 1.5px solid var(--border); font-size: 0.95rem; }
-body.dark .toolkit-grid span { background: var(--card-dark); border-color: var(--border-dark); color: var(--accent); }
+/* Technical Expertise Section (Home Page) */
+.tech-section { background: var(--card); border-top: 1.5px solid var(--border); border-bottom: 1.5px solid var(--border); }
+body.dark .tech-section { background: var(--card-dark); border-color: var(--border-dark); }
+.tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+.tech-category h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-top: 0; }
+.tech-category ul { list-style: none; padding: 0; margin: 0; }
+.tech-category li { color: var(--subtext); margin-bottom: 0.5rem; }
+body.dark .tech-category li { color: var(--subtext-dark); }
 
 /* Detailed Services Grid (Services Page) */
 .services-grid-detailed { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
@@ -114,14 +123,8 @@ body.dark .service-details strong { color: var(--text-dark); }
 .service-details ul { list-style: '✓ '; margin: 0 0 1rem 1rem; padding: 0; color: var(--subtext); }
 body.dark .service-details ul { color: var(--subtext-dark); }
 .service-details ul li { margin-bottom: 0.3rem; }
-.price { margin: 1rem 0 1.5rem 0; font-weight: 700; font-size: 1.1rem; color: var(--accent); text-align: center; }
-.btn.small.full-width { width: 100%; text-align: center; margin-left: 0; padding: 0.7rem 1rem; }
-
-/* Process List (Services Page) */
-.process-list { list-style: none; padding: 0; max-width: 600px; margin: 0 auto; }
-.process-list li { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem; background: var(--card); border: 1.5px solid var(--border); border-radius: 12px; margin-bottom: 1rem; }
-body.dark .process-list li { background: var(--card-dark); border-color: var(--border-dark); }
-.process-list li span { font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1; }
+.price { margin: auto 0 1.5rem 0; padding-top: 1rem; font-weight: 700; font-size: 1.1rem; color: var(--accent); text-align: center; }
+.btn.small.full-width { display: block; width: 100%; text-align: center; margin-left: 0; padding: 0.7rem 1rem; }
 
 /* FAQ (Services Page) */
 .faq-container { max-width: 700px; margin: 0 auto; }
